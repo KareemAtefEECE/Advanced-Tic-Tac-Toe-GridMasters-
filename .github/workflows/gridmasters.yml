@@ -63,8 +63,6 @@ jobs:
         );
         EOF
 
-         - name: Install Xvfb
-         run: sudo apt-get install -y xvfb
 
     - name: Build project using qmake
       run: |
@@ -86,8 +84,6 @@ jobs:
         host: linux
         target: desktop
 
-    - name: Install Xvfb
-      run: sudo apt-get install -y xvfb
 
     - name: Build tests
       run: |
