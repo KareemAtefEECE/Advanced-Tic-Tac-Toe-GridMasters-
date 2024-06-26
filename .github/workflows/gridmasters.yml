@@ -21,12 +21,11 @@ jobs:
         host: linux
         target: desktop
 
-    - name: Build application
+    - name: Build project using qmake
       run: |
-        mkdir -p build
         cd build
-        qmake ../Tic-Tac-Toe.pro
-        make
+        qmake ..
+        make VERBOSE=1
 
     - name: Run application (if applicable)
       run: |
