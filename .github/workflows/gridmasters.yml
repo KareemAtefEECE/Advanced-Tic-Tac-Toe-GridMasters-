@@ -72,8 +72,8 @@ jobs:
     - name: Run application
       run: |
         cd build
-        xvfb-run --auto-servernum --server-args='-screen 0 1024x768x24' ./Tic-Tac-Toe
-
+        xvfb-run --auto-servernum --server-args='-screen 0 1024x768x24' timeout 60s ./Tic-Tac-Toe > app_log.txt 2>&1 &
+        tail -f app_log.txt
   test:
     runs-on: ubuntu-latest
 
