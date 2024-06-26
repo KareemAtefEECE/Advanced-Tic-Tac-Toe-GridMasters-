@@ -55,11 +55,51 @@ CONFIG(debug, debug|release) {
     CONFIG += testcase
     DEFINES += RUNNING_TESTS
     SOURCES += tests/all_tests.cpp \
+               tests/main.cpp \
                tests/test_aiwindow.cpp \
                tests/test_aiwindow_intigration.cpp \
                tests/test_multiPlayerWindow_intigration.cpp \
                tests/test_multiplayerwindow.cpp \
                tests/test_usersignuplogin.cpp
+                aiwindow.cpp \
+                authenticationwindow.cpp \
+                chooseaiwindow.cpp \
+                dialog.cpp \
+                historywindow.cpp \
+                loginwindow.cpp \
+                mainwindow.cpp \
+                multiplayerwindow.cpp \
+                 replaygamewindow.cpp \
+                 replaywindow.cpp \
+                 signupwindow.cpp \
+                 user2window.cpp
+
+    HEADERS += aiwindow.h \
+           authenticationwindow.h \
+           chooseaiwindow.h \
+           dialog.h \
+           historywindow.h \
+           loginwindow.h \
+           mainwindow.h \
+           multiplayerwindow.h \
+           replaygamewindow.h \
+           replaywindow.h \
+           sessionmanager.h \
+           signupwindow.h \
+           user2window.h
+
+FORMS += aiwindow.ui \
+         authenticationwindow.ui \
+         chooseaiwindow.ui \
+         dialog.ui \
+         historywindow.ui \
+         loginwindow.ui \
+         mainwindow.ui \
+         multiplayerwindow.ui \
+         replaygamewindow.ui \
+         replaywindow.ui \
+         signupwindow.ui \
+         user2window.ui
 }
 
 # Default rules for deployment.
