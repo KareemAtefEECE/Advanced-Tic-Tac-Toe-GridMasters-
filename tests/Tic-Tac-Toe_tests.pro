@@ -60,7 +60,7 @@ CONFIG(debug, debug|release) {
                tests/test_aiwindow_intigration.cpp \
                tests/test_multiPlayerWindow_intigration.cpp \
                tests/test_multiplayerwindow.cpp \
-               tests/test_usersignuplogin.cpp
+               tests/test_usersignuplogin.cpp\
                 aiwindow.cpp \
                 authenticationwindow.cpp \
                 chooseaiwindow.cpp \
