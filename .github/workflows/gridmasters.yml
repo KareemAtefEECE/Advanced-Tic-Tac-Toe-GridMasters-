@@ -69,10 +69,10 @@ jobs:
           mkdir build
         fi
 
-    - name: Build application
+    - name: Build project using qmake
       run: |
         cd build
-        qmake ../app/Tic-Tac-Toe.pro
+        qmake ..
         make VERBOSE=1
 
     - name: Build and run tests
