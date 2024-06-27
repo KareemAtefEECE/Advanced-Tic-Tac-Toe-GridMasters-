@@ -95,4 +95,4 @@ jobs:
     - name: Run tests
       run: |
         cd build_tests
-        xvfb-run --auto-servernum --server-args='-screen 0 1024x768x24' .tests/Tic-Tac-Toe_tests
+        xvfb-run --auto-servernum --server-args='-screen 0 1024x768x24' ./Tic-Tac-Toe_tests
