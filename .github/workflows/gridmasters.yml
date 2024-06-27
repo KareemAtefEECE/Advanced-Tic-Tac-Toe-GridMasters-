@@ -184,8 +184,6 @@ jobs:
           qmake ../../tests/Tic-Tac-Toe_tests.pro
           make
 
-      - name: Ensure test executable permissions
-        run: chmod +x build_tests/Tic-Tac-Toe_tests
 
       - name: Run tests
         run: |
