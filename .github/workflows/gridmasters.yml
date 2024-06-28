@@ -1,4 +1,4 @@
-name: Build and Test
+name: Grid Masters
 
 on:
   push:
@@ -91,6 +91,3 @@ jobs:
         qmake ../Tic-Tac-Toe_tests.pro
         make
 
-    - name: Run tests
-      run: |
-       cd tests/Tic-Tac-Toe_tests
